@@ -1,6 +1,5 @@
 Feature: Login functionality
 
-  @Outline
   Scenario Outline: User login with valid credentials
     Given the user is on the login page
     When the user enters "<username>" and "<password>"
@@ -12,8 +11,7 @@ Feature: Login functionality
       | user2    | password2 |
       | user3    | password3 |
 
-  @Outline2
   Scenario: User login with valid credentials
     Given the user is on the login page
-    When the user enters valid username and password
+    When the user enters "valid user"
     Then the user should be logged in successfully
