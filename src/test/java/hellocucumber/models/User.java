@@ -1,19 +1,22 @@
 package hellocucumber.models;
 
 
-import lombok.*;
+/*import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Builder
 @AllArgsConstructor
-@NoArgsConstructor
+@NoArgsConstructor*/
 //@ToString(includeFieldNames = true)
 public class User {
 
     private String username;
     private String password;
 
-    /*public String getUsername() {
+    public String getUsername() {
         return username;
     }
 
@@ -27,7 +30,7 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }*/
+    }
 
     public String toString(){
         return "Username: "+getUsername()+" Password: "+getPassword();
